@@ -1,20 +1,33 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
     <style name="AppBaseTheme" parent="android:Theme.Light">
+
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
+        <item name="android:textSize">@dimen/textSize_title</item>
     </style>
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- Action bar -->
+    <style name="ActionBar" parent="AppBaseTheme"></style>
+
+    <!-- Action bar tabs styles -->
+    <style name="ActionBarTabs" parent="@android:style/Widget.Holo.ActionBar.TabView"></style>
+
+    <!-- Paper -->
+    <style name="Paper" parent="AppBaseTheme">
+        <item name="android:padding">@dimen/paper_padding</item>
     </style>
 
 </resources>
